@@ -18,6 +18,7 @@
 package com.example.androidbussapp1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -100,6 +101,12 @@ public class android_large___15_activity extends Activity {
 		
 		//custom code goes here
 	
+	}
+	public void OpenUserAccountDetails(View v) {
+
+		Intent nextScreen = new Intent(getApplicationContext(), android_large___9_activity.class);
+		startActivity(nextScreen);
+
 	}
 }
 	
