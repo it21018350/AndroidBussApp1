@@ -1,4 +1,6 @@
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent" android:layout_height="wrap_content" >
 	<!-- 
 	/*
@@ -277,38 +279,13 @@
 					android:layout_height="wrap_content"
 					>
 
-					<View   android:id="@+id/ellipse_6_ek1"
-						android:background="@drawable/ellipse_6_ek1_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="53dp"
-						android:layout_height="53dp" />
-
-
-					<RelativeLayout android:id="@+id/____icon__plus__ek1"
-						android:layout_marginTop="12dp"
-						android:layout_marginStart="12dp"
+					<com.google.android.material.floatingactionbutton.FloatingActionButton
+						android:id="@+id/floatingActionButton"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						>
-
-						<ImageView android:id="@+id/vector_ek18"
-							android:src="@drawable/vector_ek18"
-							android:contentDescription="vector_ek18"
-							 android:layout_marginStart="15dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="0dp"
-							android:layout_height="30dp" />
-
-						<ImageView android:id="@+id/vector_ek19"
-							android:src="@drawable/vector_ek19"
-							android:contentDescription="vector_ek19"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="15dp"
-							android:layout_width="30dp"
-							android:layout_height="0dp" />
-
-					</RelativeLayout>
+						android:clickable="true"
+						android:onClick="CreateReminder"
+						app:srcCompat="@android:drawable/ic_input_add" />
 
 				</RelativeLayout>
 
