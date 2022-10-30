@@ -18,6 +18,7 @@
 package com.example.androidbussapp1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -25,8 +26,13 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Map;
 
@@ -51,14 +57,15 @@ import java.util.Map;
 	private View ellipse_3_ek2;
 	private View ellipse_4_ek2;
 	private FirebaseDatabase database ;
-	private DatabaseReference mdatabase;
+	private DatabaseReference userRef;
+	private static final String USERS = "users";
+
 
 	private Map<String, String> userMap;
 	private String fName;
 	private String lName;
 	private String email;
 	private int Pno;
-	private static final String USER = "user";
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -66,11 +73,34 @@ import java.util.Map;
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.android_large___9);
 
+		Intent intent = getIntent();
+		email = intent.getStringExtra("email");
 		txtfName2 = findViewById(R.id.txtfName2);
 		txtlName2 = findViewById(R.id.txtlName2);
 		txtemail2 = findViewById(R.id.txtemail2);
 		txtpNo = findViewById(R.id.txtpNo);
 
+		database = FirebaseDatabase.getInstance();
+		userRef = database.getReference(USERS);
+
+		userRef.addValueEventListener(new ValueEventListener() {
+			@Override
+			public void onDataChange(@NonNull DataSnapshot datasnapshot) {
+				for(DataSnapshot ds : datasnapshot.getChildren()){
+					if(ds.child("email").getValue().equals(email)){
+						txtfName2.setText(ds.child("fullName").getValue(String.class));
+						txtlName2.setText(ds.child("lastName").getValue(String.class));
+						txtemail2.setText(ds.child("email").getValue(String.class));
+						txtpNo.setText(ds.child("contactNumber").getValue(String.class));
+					}
+				}
+			}
+
+			@Override
+			public void onCancelled(@NonNull DatabaseError error) {
+
+			}
+		});
 
 		_bg__android_large___9_ek2 = (View) findViewById(R.id._bg__android_large___9_ek2);
 		rectangle_4_ek9 = (View) findViewById(R.id.rectangle_4_ek9);
