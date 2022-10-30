@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "223906069913",
+    "project_id": "androidbussapp",
+    "storage_bucket": "androidbussapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223906069913:android:19c6d8d56d8b56c7c86708",
+        "android_client_info": {
+          "package_name": "com.example.androidbussapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223906069913-qp7plcqav50guj716devmek1aqciui81.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.androidbussapp1",
+            "certificate_hash": "097350ca3c19d06045970d11f06c0e56af1cb330"
+          }
+        },
+        {
+          "client_id": "223906069913-vmsdgfo1o6uag0c0qg8a77its7me960i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj1pOPk0dKG6Ga8A2N1waiV9RqprWHFJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223906069913-vmsdgfo1o6uag0c0qg8a77its7me960i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
