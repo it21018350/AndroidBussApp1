@@ -1,0 +1,118 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		login
+	 *	@date 		Sunday 30th of October 2022 06:47:49 AM
+	 *	@title 		Page 1
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/android_large___25" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<RelativeLayout android:id="@+id/page_android_large___25_ek1"
+				android:layout_marginTop="0dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<View   android:id="@+id/_bg__android_large___25_ek2"
+					android:background="@drawable/_bg__android_large___25_ek2_shape"
+					 android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:layout_width="385dp"
+					android:layout_height="800dp" />
+
+				<View   android:id="@+id/rectangle_4_ek19"
+					android:background="@drawable/rectangle_4_ek19_shape"
+					 android:layout_marginStart="0dp"
+					android:layout_marginTop="33dp"
+					android:layout_width="385dp"
+					android:layout_height="767dp" />
+
+				<TextView android:id="@+id/we_are_developing_an_app_for_the_people_who_are_using_public_transportation_service_for_the_transport_and_who_can_miss_their_destination_because_of_the_unavoidable_reasons__using_this_application__they_can_set_their_departure_point_and_destination_point__then_system_will_send_a_vibration_signal_or_a_sound_when_they_come_closure_to_the_halt__version__1_001"
+					android:textSize="16sp"
+					android:textColor="@color/login_with_google_color"
+					android:layout_marginLeft="28dp"
+					android:layout_marginTop="139dp"
+					android:layout_width="358dp"
+					android:layout_height="256dp"
+					android:text="@string/we_are_developing_an_app_for_the_people_who_are_using_public_transportation_service_for_the_transport_and_who_can_miss_their_destination_because_of_the_unavoidable_reasons__using_this_application__they_can_set_their_departure_point_and_destination_point__then_system_will_send_a_vibration_signal_or_a_sound_when_they_come_closure_to_the_halt__version__1_001_string"
+					 />
+
+				<TextView android:id="@+id/about_ek1"
+					android:layout_gravity="center_horizontal|center"
+					android:gravity="center"
+					android:textSize="16sp"
+					android:textColor="@color/login_with_google_color"
+					android:layout_marginLeft="78dp"
+					android:layout_marginTop="79dp"
+					android:layout_width="214dp"
+					android:layout_height="29dp"
+					android:text="@string/about_ek1_string"
+					 />
+
+
+				<RelativeLayout android:id="@+id/group_22_ek5"
+					android:layout_marginTop="426dp"
+					android:layout_marginStart="45dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					>
+
+					<View   android:id="@+id/rectangle_1_ek35"
+						android:background="@drawable/rectangle_1_ek35_shape"
+						 android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp"
+						android:layout_width="303dp"
+						android:layout_height="50dp" />
+
+					<TextView android:id="@+id/user_agreement"
+						android:textSize="16sp"
+						android:textColor="@color/login_with_google_color"
+						android:layout_marginLeft="18dp"
+						android:layout_marginTop="15dp"
+						android:layout_width="245dp"
+						android:layout_height="30dp"
+						android:text="@string/user_agreement_string"
+						 />
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+
+
+
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>
