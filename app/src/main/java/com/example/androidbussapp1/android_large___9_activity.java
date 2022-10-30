@@ -87,12 +87,12 @@ import java.util.Map;
 			@Override
 			public void onDataChange(@NonNull DataSnapshot datasnapshot) {
 				for(DataSnapshot ds : datasnapshot.getChildren()){
-					if(ds.child("email").getValue().equals(email)){
+
 						txtfName2.setText(ds.child("fullName").getValue(String.class));
 						txtlName2.setText(ds.child("lastName").getValue(String.class));
 						txtemail2.setText(ds.child("email").getValue(String.class));
-						txtpNo.setText(ds.child("contactNumber").getValue(String.class));
-					}
+						txtpNo.setText(ds.child("contactNumber").getValue(Integer.class));
+
 				}
 			}
 
