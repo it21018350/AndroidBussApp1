@@ -22,11 +22,17 @@ import android.os.Bundle;
 
 
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.ImageView;
 import android.content.Intent;
+import android.widget.Toast;
 
-public class login_activity extends Activity {
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+	public class login_activity extends Activity {
 
 	
 	private View _bg__login_ek2;
@@ -35,7 +41,7 @@ public class login_activity extends Activity {
 	private View rectangle_1;
 	private TextView email;
 	private View rectangle_1_ek1;
-	private TextView password;
+//	private TextView password;
 	private View rectangle_3;
 	private TextView login_ek4;
 	private View rectangle_3_ek1;
@@ -48,6 +54,10 @@ public class login_activity extends Activity {
 	private View line_2;
 	private ImageView ellipse_1;
 	private ImageView microsoftteams_image__7__1;
+	private EditText password;
+	private EditText username;
+	private Button loginBtn;
+	private DatabaseReference loginDBRef;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -63,8 +73,8 @@ public class login_activity extends Activity {
 //		email = (TextView) findViewById(R.id.email);
 //		rectangle_1_ek1 = (View) findViewById(R.id.rectangle_1_ek1);
 //		password = (TextView) findViewById(R.id.password);
-		rectangle_3 = (View) findViewById(R.id.rectangle_3);
-		login_ek4 = (TextView) findViewById(R.id.login_ek4);
+//		rectangle_3 = (View) findViewById(R.id.rectangle_3);
+//		login_ek4 = (TextView) findViewById(R.id.login_ek4);
 		rectangle_3_ek1 = (View) findViewById(R.id.rectangle_3_ek1);
 		login_with_google = (TextView) findViewById(R.id.login_with_google);
 		image_1 = (ImageView) findViewById(R.id.image_1);
@@ -75,7 +85,17 @@ public class login_activity extends Activity {
 		line_2 = (View) findViewById(R.id.line_2);
 		ellipse_1 = (ImageView) findViewById(R.id.ellipse_1);
 		microsoftteams_image__7__1 = (ImageView) findViewById(R.id.microsoftteams_image__7__1);
+		loginBtn = (Button) findViewById(R.id.loginbtn);
+		username = (EditText)findViewById(R.id.editTextTextEmailAddress);
+		password = (EditText)findViewById(R.id.editTextTextPassword);
 
+		loginDBRef = FirebaseDatabase.getInstance().getReference().child("Login");
+		loginBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				insertLoginData();
+			}
+		});
 
 		_forgot_password_.setOnClickListener(new View.OnClickListener() {
 		
@@ -101,7 +121,6 @@ public class login_activity extends Activity {
 		_new_to_bus_app__register_now.setOnClickListener(new View.OnClickListener() {
 
 			public void onClick(View v) {
-
 				Intent nextScreen = new Intent(getApplicationContext(), android_large___2_activity.class);
 				startActivity(nextScreen);
 
@@ -109,10 +128,12 @@ public class login_activity extends Activity {
 		});
 
 		
-		
+
 		//custom code goes here
 	
 	}
+
+
 
 
 	public void login(View v) {
@@ -121,6 +142,16 @@ public class login_activity extends Activity {
 		startActivity(nextScreen);
 
 	}
+
+		public void insertLoginData() {
+			String un = username.getText().toString();
+			String pw = password.getText().toString();
+
+			LoginClass login = new LoginClass(un, pw);
+
+			loginDBRef.push().setValue(login);
+			Toast.makeText(login_activity.this, "Data Inserted", Toast.LENGTH_SHORT).show();
+		}
 
 }
 	

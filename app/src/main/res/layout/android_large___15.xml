@@ -15,8 +15,8 @@
 	 *
 	 */
 	-->
-	<ScrollView android:id="@+id/android_large___15" 
-		android:layout_width="wrap_content" 
+	<ScrollView android:id="@+id/android_large___15"
+		android:layout_width="wrap_content"
 		android:layout_height="match_parent" >
 
 		<RelativeLayout android:id="@+id/content_container" 
@@ -233,7 +233,10 @@
 						 android:layout_marginStart="0dp"
 						android:layout_marginTop="0dp"
 						android:layout_width="314dp"
-						android:layout_height="157dp" />
+						android:layout_height="157dp"
+						android:clickable="true"
+						android:onClick="OpenUserAccountDetails"
+						/>
 
 				</RelativeLayout>
 
