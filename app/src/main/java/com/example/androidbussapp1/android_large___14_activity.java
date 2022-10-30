@@ -49,9 +49,9 @@ public class android_large___14_activity extends Activity {
 	private View ellipse_2_ek9;
 	private View ellipse_3_ek9;
 	private View ellipse_4_ek9;
-	private View ellipse_6_ek1;
-	private ImageView vector_ek18;
-	private ImageView vector_ek19;
+//	private View ellipse_6_ek1;
+//	private ImageView vector_ek18;
+//	private ImageView vector_ek19;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -80,9 +80,9 @@ public class android_large___14_activity extends Activity {
 		ellipse_2_ek9 = (View) findViewById(R.id.ellipse_2_ek9);
 		ellipse_3_ek9 = (View) findViewById(R.id.ellipse_3_ek9);
 		ellipse_4_ek9 = (View) findViewById(R.id.ellipse_4_ek9);
-		ellipse_6_ek1 = (View) findViewById(R.id.ellipse_6_ek1);
-		vector_ek18 = (ImageView) findViewById(R.id.vector_ek18);
-		vector_ek19 = (ImageView) findViewById(R.id.vector_ek19);
+//		ellipse_6_ek1 = (View) findViewById(R.id.ellipse_6_ek1);
+//		vector_ek18 = (ImageView) findViewById(R.id.vector_ek18);
+//		vector_ek19 = (ImageView) findViewById(R.id.vector_ek19);
 	
 		
 		//custom code goes here
@@ -92,6 +92,13 @@ public class android_large___14_activity extends Activity {
 	public void OpenSettings(View v) {
 
 		Intent nextScreen = new Intent(getApplicationContext(), android_large___8_activity.class);
+		startActivity(nextScreen);
+
+	}
+
+	public void CreateReminder(View v) {
+
+		Intent nextScreen = new Intent(getApplicationContext(), android_large___16_activity.class);
 		startActivity(nextScreen);
 
 	}
