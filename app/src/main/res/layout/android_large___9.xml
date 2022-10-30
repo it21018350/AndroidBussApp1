@@ -38,12 +38,13 @@
 				android:layout_height="wrap_content"
 				>
 
-				<View   android:id="@+id/_bg__android_large___9_ek2"
-					android:background="@drawable/_bg__android_large___9_ek2_shape"
-					 android:layout_marginStart="0dp"
+				<View
+					android:id="@+id/_bg__android_large___9_ek2"
+					android:layout_width="match_parent"
+					android:layout_height="800dp"
+					android:layout_marginStart="0dp"
 					android:layout_marginTop="0dp"
-					android:layout_width="385dp"
-					android:layout_height="800dp" />
+					android:background="@drawable/_bg__android_large___9_ek2_shape" />
 
 
 				<RelativeLayout android:id="@+id/group_30_ek2"
@@ -53,59 +54,14 @@
 					android:layout_height="wrap_content"
 					>
 
-					<View   android:id="@+id/rectangle_4_ek9"
-						android:background="@drawable/rectangle_4_ek9_shape"
-						 android:layout_marginStart="0dp"
+
+					<View
+						android:id="@+id/rectangle_4_ek9"
+						android:layout_width="393dp"
+						android:layout_height="761dp"
+						android:layout_marginStart="0dp"
 						android:layout_marginTop="0dp"
-						android:layout_width="385dp"
-						android:layout_height="767dp" />
-
-					<TextView android:id="@+id/contact_no__0712345678"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textSize="16sp"
-						android:textColor="@color/login_with_google_color"
-						android:layout_marginLeft="41dp"
-						android:layout_marginTop="408dp"
-						android:layout_width="214.06dp"
-						android:layout_height="30dp"
-						android:text="@string/contact_no__0712345678_string"
-						 />
-
-					<TextView android:id="@+id/last_name__galappaththi"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textSize="16sp"
-						android:textColor="@color/login_with_google_color"
-						android:layout_marginLeft="41dp"
-						android:layout_marginTop="314dp"
-						android:layout_width="213dp"
-						android:layout_height="30dp"
-						android:text="@string/last_name__galappaththi_string"
-						 />
-
-					<TextView android:id="@+id/email__sajana_dewmina_gmail_com"
-						android:textSize="16sp"
-						android:textColor="@color/login_with_google_color"
-						android:layout_marginLeft="45dp"
-						android:layout_marginTop="361dp"
-						android:layout_width="302.26dp"
-						android:layout_height="32dp"
-						android:text="@string/email__sajana_dewmina_gmail_com_string"
-						 />
-
-					<TextView android:id="@+id/first_name__sajana"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textSize="16sp"
-						android:textColor="@color/login_with_google_color"
-						android:layout_marginLeft="42dp"
-						android:layout_marginTop="272dp"
-						android:layout_width="165dp"
-						android:layout_height="30dp"
-						android:text="@string/first_name__sajana_string"
-						 />
-
+						android:background="@drawable/rectangle_4_ek9_shape" />
 
 					<RelativeLayout android:id="@+id/group_30_ek3"
 						android:layout_marginTop="97dp"
@@ -131,17 +87,138 @@
 
 					</RelativeLayout>
 
-					<TextView android:id="@+id/sajana_galappaththi"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textSize="16sp"
-						android:textColor="@color/login_with_google_color"
-						android:layout_marginLeft="-3dp"
-						android:layout_marginTop="202dp"
-						android:layout_width="398dp"
-						android:layout_height="30dp"
-						android:text="@string/sajana_galappaththi_string"
-						 />
+					<TextView
+						android:id="@+id/txtfName"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="52dp"
+						android:layout_marginTop="255dp"
+						android:layout_marginEnd="275dp"
+						android:text="First Name: " />
+
+					<TextView
+						android:id="@+id/txtfName2"
+						android:layout_width="187dp"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="163dp"
+						android:layout_marginTop="256dp"
+						android:layout_marginEnd="53dp" />
+
+					<TextView
+						android:id="@+id/txtPno"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="52dp"
+						android:layout_marginTop="446dp"
+						android:layout_marginEnd="275dp"
+						android:text="Contact No:" />
+
+					<TextView
+						android:id="@+id/txtEmail"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="52dp"
+						android:layout_marginTop="373dp"
+						android:layout_marginEnd="275dp"
+						android:text="Email: " />
+
+					<TextView
+						android:id="@+id/txtlName"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="52dp"
+						android:layout_marginTop="306dp"
+						android:layout_marginEnd="275dp"
+						android:text="Last Name: " />
+
+					<TextView
+						android:id="@+id/txtlName2"
+						android:layout_width="189dp"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="163dp"
+						android:layout_marginTop="307dp"
+						android:layout_marginEnd="53dp" />
+
+					<TextView
+						android:id="@+id/txtemail2"
+						android:layout_width="189dp"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="163dp"
+						android:layout_marginTop="375dp"
+						android:layout_marginEnd="53dp" />
+
+					<TextView
+						android:id="@+id/txtpNo"
+						android:layout_width="189dp"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="167dp"
+						android:layout_marginTop="446dp"
+						android:layout_marginEnd="49dp" />
+
+					<Button
+						android:id="@+id/button"
+						android:layout_width="252dp"
+						android:layout_height="59dp"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="59dp"
+						android:layout_marginTop="522dp"
+						android:layout_marginEnd="74dp"
+						android:backgroundTint="#2196F3"
+						android:text="Button" />
+
+					<Button
+						android:id="@+id/btncd"
+						android:layout_width="252dp"
+						android:layout_height="59dp"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="59dp"
+						android:layout_marginTop="522dp"
+						android:layout_marginEnd="74dp"
+						android:backgroundTint="#2196F3"
+						android:text="Change Details"
+						android:textAllCaps="false" />
+
+					<Button
+						android:id="@+id/btncp"
+						android:layout_width="252dp"
+						android:layout_height="59dp"
+						android:layout_alignParentStart="true"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentEnd="true"
+						android:layout_marginStart="59dp"
+						android:layout_marginTop="602dp"
+						android:layout_marginEnd="74dp"
+						android:backgroundTint="#2196F3"
+						android:text="Change Password"
+						android:textAllCaps="false" />
 
 				</RelativeLayout>
 
@@ -151,28 +228,7 @@
 					android:layout_marginStart="55dp"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					>
-
-					<View   android:id="@+id/rectangle_1_ek20"
-						android:background="@drawable/rectangle_1_ek20_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="270dp"
-						android:layout_height="50dp" />
-
-					<TextView android:id="@+id/change_details"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textSize="16sp"
-						android:textColor="@color/rectangle_4_color"
-						android:layout_marginLeft="12dp"
-						android:layout_marginTop="15dp"
-						android:layout_width="239dp"
-						android:layout_height="36dp"
-						android:text="@string/change_details_string"
-						 />
-
-				</RelativeLayout>
+					/>
 
 
 				<RelativeLayout android:id="@+id/group_19"
@@ -180,28 +236,7 @@
 					android:layout_marginStart="54dp"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					>
-
-					<View   android:id="@+id/rectangle_1_ek21"
-						android:background="@drawable/rectangle_1_ek21_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="270dp"
-						android:layout_height="50dp" />
-
-					<TextView android:id="@+id/change_password"
-						android:layout_gravity="center_horizontal|center"
-						android:gravity="center"
-						android:textSize="16sp"
-						android:textColor="@color/rectangle_4_color"
-						android:layout_marginLeft="12dp"
-						android:layout_marginTop="15dp"
-						android:layout_width="239dp"
-						android:layout_height="36dp"
-						android:text="@string/change_password_string"
-						 />
-
-				</RelativeLayout>
+					/>
 
 				<TextView android:id="@+id/user_account_ek1"
 					android:layout_gravity="center_horizontal|center"
