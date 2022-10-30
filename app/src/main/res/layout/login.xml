@@ -90,7 +90,9 @@
 						android:layout_marginEnd="59dp"
 						android:ems="10"
 						android:hint="Password"
-						android:inputType="textPassword" />
+						android:inputType="textPassword"
+						tools:ignore="TouchTargetSizeCheck"
+						android:minHeight="48dp"/>
 
 				</RelativeLayout>
 
@@ -98,7 +100,7 @@
 				<RelativeLayout android:id="@+id/group_6"
 					android:layout_marginTop="603dp"
 					android:layout_width="match_parent"
-					android:layout_height="40dp"
+					android:layout_height="48dp"
 					android:clickable="true"
 					android:onClick="login"
 					>
