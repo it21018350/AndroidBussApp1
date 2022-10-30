@@ -1,23 +1,9 @@
 
-	 
-	/*
-	 *	This content is generated from the API File Info.
-	 *	(Alt+Shift+Ctrl+I).
-	 *
-	 *	@desc 		
-	 *	@file 		login
-	 *	@date 		Sunday 30th of October 2022 06:47:49 AM
-	 *	@title 		Page 1
-	 *	@author 	
-	 *	@keywords 	
-	 *	@generator 	Export Kit v1.3.figma
-	 *
-	 */
-	
 
 package com.example.androidbussapp1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -54,20 +40,22 @@ public class android_large___18_activity extends Activity {
 		rectangle_4_ek18 = (View) findViewById(R.id.rectangle_4_ek18);
 		rectangle_1_ek32 = (View) findViewById(R.id.rectangle_1_ek32);
 		about = (TextView) findViewById(R.id.about);
-		rectangle_1_ek33 = (View) findViewById(R.id.rectangle_1_ek33);
-		sleep_track = (TextView) findViewById(R.id.sleep_track);
-		rectangle_18_ek4 = (View) findViewById(R.id.rectangle_18_ek4);
-		rectangle_19 = (View) findViewById(R.id.rectangle_19);
+
 		settings_ek1 = (TextView) findViewById(R.id.settings_ek1);
 		rectangle_1_ek34 = (View) findViewById(R.id.rectangle_1_ek34);
 		reminder_ek2 = (TextView) findViewById(R.id.reminder_ek2);
 		rectangle_11_ek4 = (View) findViewById(R.id.rectangle_11_ek4);
-		vector_ek20 = (ImageView) findViewById(R.id.vector_ek20);
-		clear_data = (TextView) findViewById(R.id.clear_data);
-	
-		
-		//custom code goes here
-	
+
+
+	}
+
+	public void About(View v) {
+		Intent nextScreen = new Intent(getApplicationContext(), android_large___25_activity.class);
+		startActivity(nextScreen);
+	}
+	public void Reminder(View v) {
+		Intent nextScreen = new Intent(getApplicationContext(), android_large___24_activity.class);
+		startActivity(nextScreen);
 	}
 }
 	

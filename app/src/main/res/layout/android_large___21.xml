@@ -1,43 +1,11 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent" android:layout_height="wrap_content" >
-	<!-- 
-	/*
-	 *	This content is generated from the API File Info.
-	 *	(Alt+Shift+Ctrl+I).
-	 *
-	 *	@desc 		
-	 *	@file 		login
-	 *	@date 		Sunday 30th of October 2022 06:47:49 AM
-	 *	@title 		Page 1
-	 *	@author 	
-	 *	@keywords 	
-	 *	@generator 	Export Kit v1.3.figma
-	 *
-	 */
-	-->
-	<ScrollView android:id="@+id/android_large___21" 
-		android:layout_width="wrap_content" 
-		android:layout_height="match_parent" >
+
+
 
 		<RelativeLayout android:id="@+id/content_container" 
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" >
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 			<RelativeLayout android:id="@+id/page_android_large___21_ek1"
 				android:layout_marginTop="0dp"
@@ -53,13 +21,14 @@
 					android:layout_width="385dp"
 					android:layout_height="800dp" />
 
-				<View   android:id="@+id/rectangle_4_ek21"
-					android:background="@drawable/rectangle_4_ek21_shape"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="33dp"
-					android:layout_width="385dp"
-					android:layout_height="767dp" />
 
+				<View
+					android:id="@+id/rectangle_4_ek21"
+					android:layout_width="385dp"
+					android:layout_height="767dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="33dp"
+					android:background="@drawable/rectangle_4_ek21_shape" />
 
 				<RelativeLayout android:id="@+id/group_22_ek6"
 					android:layout_marginTop="195dp"
@@ -91,23 +60,23 @@
 						android:layout_marginStart="250dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						>
+						/>
 
-						<View   android:id="@+id/rectangle_18_ek5"
-							android:background="@drawable/rectangle_18_ek5_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="34.71dp"
-							android:layout_height="17dp" />
+					<Button
+						android:id="@+id/SON"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:layout_marginEnd="6dp"
+						android:text="ON" />
 
-						<View   android:id="@+id/rectangle_19_ek1"
-							android:background="@drawable/rectangle_19_ek1_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="24.08dp"
-							android:layout_height="17dp" />
-
-					</RelativeLayout>
+					<Button
+						android:id="@+id/SOFF"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="19dp"
+						android:layout_toStartOf="@+id/SON"
+						android:text="OFF" />
 
 				</RelativeLayout>
 
@@ -146,6 +115,16 @@
 							android:layout_width="303dp"
 							android:layout_height="45dp" />
 
+						<Button
+							android:id="@+id/VON"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentTop="true"
+							android:layout_alignParentEnd="true"
+							android:layout_marginTop="3dp"
+							android:layout_marginEnd="83dp"
+							android:text="ON" />
+
 					</RelativeLayout>
 
 					<TextView android:id="@+id/vibrate"
@@ -164,23 +143,7 @@
 						android:layout_marginStart="250dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						>
-
-						<View   android:id="@+id/rectangle_18_ek6"
-							android:background="@drawable/rectangle_18_ek6_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="34.71dp"
-							android:layout_height="17dp" />
-
-						<View   android:id="@+id/rectangle_19_ek2"
-							android:background="@drawable/rectangle_19_ek2_shape"
-							 android:layout_marginStart="11dp"
-							android:layout_marginTop="0dp"
-							android:layout_width="24.08dp"
-							android:layout_height="17dp" />
-
-					</RelativeLayout>
+						/>
 
 				</RelativeLayout>
 
@@ -189,5 +152,5 @@
 
 		</RelativeLayout>
 
-	</ScrollView>
+
 </HorizontalScrollView>
