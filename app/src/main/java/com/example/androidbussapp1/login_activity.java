@@ -94,6 +94,9 @@ import com.google.firebase.database.FirebaseDatabase;
 			@Override
 			public void onClick(View view) {
 				insertLoginData();
+
+				Intent nextScreen = new Intent(getApplicationContext(), android_large___14_activity.class);
+				startActivity(nextScreen);
 			}
 		});
 
@@ -136,12 +139,12 @@ import com.google.firebase.database.FirebaseDatabase;
 
 
 
-	public void login(View v) {
-
-		Intent nextScreen = new Intent(getApplicationContext(), android_large___14_activity.class);
-		startActivity(nextScreen);
-
-	}
+//	public void login(View v) {
+//
+//		Intent nextScreen = new Intent(getApplicationContext(), android_large___14_activity.class);
+//		startActivity(nextScreen);
+//
+//	}
 
 		public void insertLoginData() {
 			String un = username.getText().toString();
