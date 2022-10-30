@@ -225,6 +225,8 @@
 					android:layout_marginStart="328dp"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
+					android:clickable="true"
+					android:onClick="OpenSettings"
 					>
 
 					<View   android:id="@+id/ellipse_5_ek9"
@@ -256,12 +258,12 @@
 							android:layout_width="4.36dp"
 							android:layout_height="4.36dp" />
 
-						<View   android:id="@+id/ellipse_4_ek9"
-							android:background="@drawable/ellipse_4_ek9_shape"
-							 android:layout_marginStart="0dp"
-							android:layout_marginTop="13dp"
+						<View
+							android:id="@+id/ellipse_4_ek9"
 							android:layout_width="4.36dp"
-							android:layout_height="4.36dp" />
+							android:layout_height="4.36dp"
+							android:layout_marginStart="0dp"
+							android:background="@drawable/ellipse_4_ek9_shape" />
 
 					</RelativeLayout>
 

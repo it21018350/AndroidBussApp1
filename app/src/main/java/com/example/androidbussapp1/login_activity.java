@@ -59,10 +59,10 @@ public class login_activity extends Activity {
 		_bg__login_ek2 = (View) findViewById(R.id._bg__login_ek2);
 		rectangle_4 = (View) findViewById(R.id.rectangle_4);
 		login_ek3 = (TextView) findViewById(R.id.login_ek3);
-		rectangle_1 = (View) findViewById(R.id.rectangle_1);
-		email = (TextView) findViewById(R.id.email);
-		rectangle_1_ek1 = (View) findViewById(R.id.rectangle_1_ek1);
-		password = (TextView) findViewById(R.id.password);
+//		rectangle_1 = (View) findViewById(R.id.rectangle_1);
+//		email = (TextView) findViewById(R.id.email);
+//		rectangle_1_ek1 = (View) findViewById(R.id.rectangle_1_ek1);
+//		password = (TextView) findViewById(R.id.password);
 		rectangle_3 = (View) findViewById(R.id.rectangle_3);
 		login_ek4 = (TextView) findViewById(R.id.login_ek4);
 		rectangle_3_ek1 = (View) findViewById(R.id.rectangle_3_ek1);
@@ -75,16 +75,15 @@ public class login_activity extends Activity {
 		line_2 = (View) findViewById(R.id.line_2);
 		ellipse_1 = (ImageView) findViewById(R.id.ellipse_1);
 		microsoftteams_image__7__1 = (ImageView) findViewById(R.id.microsoftteams_image__7__1);
-	
-		
+
+
 		_forgot_password_.setOnClickListener(new View.OnClickListener() {
 		
 			public void onClick(View v) {
 				
 				Intent nextScreen = new Intent(getApplicationContext(), android_large___4_activity.class);
 				startActivity(nextScreen);
-			
-		
+
 			}
 		});
 		
@@ -95,15 +94,34 @@ public class login_activity extends Activity {
 				
 				Intent nextScreen = new Intent(getApplicationContext(), android_large___2_activity.class);
 				startActivity(nextScreen);
-			
-		
+
 			}
 		});
+
+		_new_to_bus_app__register_now.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View v) {
+
+				Intent nextScreen = new Intent(getApplicationContext(), android_large___2_activity.class);
+				startActivity(nextScreen);
+
+			}
+		});
+
 		
 		
 		//custom code goes here
 	
 	}
+
+
+	public void login(View v) {
+
+		Intent nextScreen = new Intent(getApplicationContext(), android_large___14_activity.class);
+		startActivity(nextScreen);
+
+	}
+
 }
 	
 	
