@@ -23,6 +23,7 @@ import android.os.Bundle;
 
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ImageView;
 
@@ -48,6 +49,7 @@ public class android_large___8_activity extends Activity {
 	private ImageView _296_2969961_no_image_user_profile_icon_removebg_preview_1;
 	private View rectangle_1_ek19;
 	private TextView user_account;
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -75,7 +77,8 @@ public class android_large___8_activity extends Activity {
 		_296_2969961_no_image_user_profile_icon_removebg_preview_1 = (ImageView) findViewById(R.id._296_2969961_no_image_user_profile_icon_removebg_preview_1);
 		rectangle_1_ek19 = (View) findViewById(R.id.rectangle_1_ek19);
 		user_account = (TextView) findViewById(R.id.user_account);
-	
+
+
 		
 		//custom code goes here
 	

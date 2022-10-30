@@ -38,6 +38,7 @@
 					android:layout_marginTop="0dp"
 					android:background="@drawable/_bg__login_ek2_shape" />
 
+
 				<View
 					android:id="@+id/rectangle_4"
 					android:layout_width="385dp"
@@ -45,7 +46,6 @@
 					android:layout_marginStart="0dp"
 					android:layout_marginTop="286dp"
 					android:background="@drawable/rectangle_4_shape" />
-
 
 				<TextView
 					android:id="@+id/login_ek3"
@@ -97,29 +97,21 @@
 
 				<RelativeLayout android:id="@+id/group_6"
 					android:layout_marginTop="603dp"
-					android:layout_marginStart="100dp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
 					android:clickable="true"
 					android:onClick="login"
 					>
 
-					<View   android:id="@+id/rectangle_3"
+					<Button
+						android:id="@+id/loginbtn"
+						android:layout_marginStart="60dp"
+						android:layout_marginEnd="60dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
 						android:background="@drawable/rectangle_3_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
-						android:layout_width="198dp"
-						android:layout_height="36dp" />
-
-					<TextView android:id="@+id/login_ek4"
-						android:textSize="12sp"
-						android:textColor="@color/rectangle_4_color"
-						android:layout_marginLeft="83dp"
-						android:layout_marginTop="10dp"
-						android:layout_width="50dp"
-						android:layout_height="23dp"
-						android:text="@string/login_ek4_string"
-						 />
+						android:textColor="@color/white"
+						android:text="Login" />
 
 				</RelativeLayout>
 
@@ -131,12 +123,12 @@
 					android:layout_height="wrap_content"
 					>
 
-					<View   android:id="@+id/rectangle_3_ek1"
-						android:background="@drawable/rectangle_3_ek1_shape"
-						 android:layout_marginStart="0dp"
-						android:layout_marginTop="0dp"
+					<View
+						android:id="@+id/rectangle_3_ek1"
 						android:layout_width="198dp"
-						android:layout_height="36dp" />
+						android:layout_height="36dp"
+						android:layout_marginStart="0dp"
+						android:background="@drawable/rectangle_3_ek1_shape" />
 
 					<TextView android:id="@+id/login_with_google"
 						android:textSize="12sp"
