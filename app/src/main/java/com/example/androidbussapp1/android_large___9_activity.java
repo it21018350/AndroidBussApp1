@@ -25,6 +25,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.ImageView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Map;
 
 	public class android_large___9_activity extends Activity {
@@ -47,8 +50,9 @@ import java.util.Map;
 	private View ellipse_2_ek2;
 	private View ellipse_3_ek2;
 	private View ellipse_4_ek2;
-//	private FirebaseDatabase database;
-//	private DatabaseReferance mDtabase;
+	private FirebaseDatabase database ;
+	private DatabaseReference mdatabase;
+
 	private Map<String, String> userMap;
 	private String fName;
 	private String lName;
@@ -67,7 +71,7 @@ import java.util.Map;
 		txtemail2 = findViewById(R.id.txtemail2);
 		txtpNo = findViewById(R.id.txtpNo);
 
-		//database = FirebaseDatabase.getI
+
 		_bg__android_large___9_ek2 = (View) findViewById(R.id._bg__android_large___9_ek2);
 		rectangle_4_ek9 = (View) findViewById(R.id.rectangle_4_ek9);
 
